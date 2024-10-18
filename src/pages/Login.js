@@ -16,7 +16,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const response = await axios.post('https://edu-pt-1.onrender.com/api/auth/login', formData);
       const { token, role } = response.data;
 
       // Store token and role in localStorage

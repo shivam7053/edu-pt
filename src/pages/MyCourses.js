@@ -8,7 +8,7 @@ function MyCourses() {
   useEffect(() => {
     const fetchEnrolledCourses = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/courses/my-courses', {
+        const res = await axios.get('https://edu-pt-1.onrender.com/api/courses/my-courses', {
           headers: { Authorization: token },
         });
         setCourses(res.data);

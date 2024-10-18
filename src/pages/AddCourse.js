@@ -11,7 +11,7 @@ function AddCourse() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/courses/create',
+        'https://edu-pt-1.onrender.com/api/courses/create',
         { title, description, videoId },
         { headers: { Authorization: token } }
       );
